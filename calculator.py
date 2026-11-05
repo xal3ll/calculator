@@ -19,13 +19,13 @@ def calc() -> int:
         print("Invalid operation.")
         return
     print(f" {number} {operation} {number2} = {result}")
+    again = input("Calculate again? (y/n): ").strip().lower()
+    if again != "y":
+        print("Goodbye!")
+    else:
+        calc()
 
 
 calc()
 
 
-
-def hello():
-    print("hello")
-
-hello()
